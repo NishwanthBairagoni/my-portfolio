@@ -83,147 +83,161 @@ function App() {
     subtitle: "Passionate about Technology & Innovation",
     aboutMe: "I'm a passionate Computer Science student with a strong foundation in programming and web development. I love exploring new technologies and building innovative solutions. Currently pursuing my degree while actively participating in coding competitions and open-source projects. I'm eager to learn, grow, and contribute to meaningful projects.",
     skills: {
-      frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux"],
-      backend: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
-      tools: ["Git", "Docker", "AWS", "CI/CD", "Jest"]
+      frontend: ["React", "Next.js", "Tailwind CSS", "Redux"],
+      backend: ["Node.js", "Python", "MongoDB"],
+      tools: ["Git", "Docker", "AWS", "CI/CD"]
+    },
+    academic: {
+      institution: "CMR Institute of Technology",
+      degree: "Computer Science",
+      cgpa: 8.3,
+      location: "India",
+      achievements: ["Strong academic performance", "Consistent CGPA of 8.3", "Active in technical projects"]
     },
     certifications: [
       {
-        name: "AWS Certified Solutions Architect",
-        issuer: "Amazon Web Services",
+        name: "EduSkills Virtual Internships",
+        issuer: "EduSkills",
         date: "2024",
-        credentialId: "AWS-123456789",
-        image: "https://via.placeholder.com/80x80/FF9900/FFFFFF?text=AWS",
-        description: "Demonstrates expertise in designing distributed systems on AWS",
-        verificationUrl: "https://aws.amazon.com/verification"
+        credentialId: "Multiple Cohorts",
+        image: "https://img.icons8.com/color/96/000000/graduation-cap.png",
+        description: "Completed multiple virtual internships in cutting-edge technologies",
+        subCertifications: [
+          {
+            name: "Google Android Developer Virtual Internship",
+            cohort: "Cohort 7",
+            status: "Completed",
+            verificationUrl: "#"
+          },
+          {
+            name: "Google AI-ML Virtual Internship", 
+            cohort: "Cohort 8",
+            status: "Completed",
+            verificationUrl: "#"
+          },
+          {
+            name: "AWS Cloud Virtual Internship",
+            cohort: "Cohort 9", 
+            status: "Completed",
+            verificationUrl: "#"
+          }
+        ]
       },
       {
-        name: "Google Cloud Professional Developer",
-        issuer: "Google Cloud",
-        date: "2023",
-        credentialId: "GCP-987654321",
-        image: "https://via.placeholder.com/80x80/4285F4/FFFFFF?text=GCP",
-        description: "Validates ability to build scalable applications on Google Cloud",
-        verificationUrl: "https://cloud.google.com/certification"
+        name: "Certified System Administrator",
+        issuer: "ServiceNow",
+        date: "2025",
+        credentialId: "CSA-2025",
+        image: "https://img.icons8.com/ios-filled/100/000000/settings.png",
+        description: "ServiceNow Certified System Administrator - Demonstrates expertise in ServiceNow platform administration and configuration",
+        verificationUrl: "https://drive.google.com/file/d/1i0HXrRHrNPvQJI29Se4oElAeNrgd2pP4/view?usp=sharing"
       },
       {
-        name: "Microsoft Certified: Azure Developer Associate",
-        issuer: "Microsoft",
-        date: "2023",
-        credentialId: "AZ-204-12345",
-        image: "https://via.placeholder.com/80x80/0078D4/FFFFFF?text=Azure",
-        description: "Proves skills in developing solutions for Microsoft Azure",
-        verificationUrl: "https://www.microsoft.com/en-us/learning"
-      },
-      {
-        name: "MongoDB Certified Developer",
-        issuer: "MongoDB University",
-        date: "2023",
-        credentialId: "MDB-456789",
-        image: "https://via.placeholder.com/80x80/47A248/FFFFFF?text=MongoDB",
-        description: "Validates expertise in MongoDB application development",
-        verificationUrl: "https://university.mongodb.com/course_completion"
-      },
-      {
-        name: "React Developer Certification",
+        name: "React.js Certification",
         issuer: "Meta",
-        date: "2023",
-        credentialId: "REACT-789123",
-        image: "https://via.placeholder.com/80x80/61DAFB/FFFFFF?text=React",
-        description: "Certifies advanced React development skills and best practices",
-        verificationUrl: "https://www.meta.com/certification"
+        date: "2024",
+        credentialId: "REACT-2024",
+        image: "https://img.icons8.com/color/96/000000/react-native.png",
+        description: "React.js development certification - Demonstrates expertise in building modern web applications with React",
+        verificationUrl: "#"
       },
       {
-        name: "Node.js Certified Developer",
-        issuer: "OpenJS Foundation",
-        date: "2022",
-        credentialId: "NODE-321654",
-        image: "https://via.placeholder.com/80x80/339933/FFFFFF?text=Node.js",
-        description: "Demonstrates proficiency in Node.js development",
-        verificationUrl: "https://openjsf.org/certification"
+        name: "MongoDB Certification",
+        issuer: "MongoDB University",
+        date: "2024",
+        credentialId: "MONGODB-2024",
+        image: "https://img.icons8.com/color/96/000000/mongodb.png",
+        description: "MongoDB database certification - Demonstrates expertise in NoSQL database management and development",
+        verificationUrl: "#"
       }
     ],
     codingProfiles: [
       {
         platform: "LeetCode",
-        username: "alexjohnson",
-        rating: 1850,
-        problemsSolved: 450,
-        rank: "Top 5%",
-        badge: "Knight",
-        profileUrl: "https://leetcode.com/alexjohnson",
-        achievements: ["Solved 450+ problems", "Knight Badge", "Top 5% ranking"],
-        languages: ["Python", "JavaScript", "Java"],
-        image: "https://via.placeholder.com/300x200/FFA116/FFFFFF?text=LeetCode"
+        username: "nishwanth2003",
+        rating: 1484,
+        problemsSolved: 148,
+        rank: "Top 49.47%",
+        badge: "50 Days Badge 2025",
+        profileUrl: "https://leetcode.com/u/nishwanth2003/",
+        achievements: ["Solved 148 problems", "50 Days Badge 2025", "93 active days", "Max streak: 11 days", "32 contests attended"],
+        languages: ["Java", "C", "Python"],
+        image: "https://leetcode.com/static/images/LeetCode_Sharing.png"
       },
       {
         platform: "Codeforces",
-        username: "alexjohnson",
-        rating: 2100,
-        problemsSolved: 380,
-        rank: "Expert",
-        badge: "Expert",
-        profileUrl: "https://codeforces.com/profile/alexjohnson",
-        achievements: ["Expert Rating", "380+ problems solved", "Contest participant"],
+        username: "nishwanth2003",
+        rating: 1100,
+        problemsSolved: 45,
+        rank: "Pupil",
+        badge: "Pupil",
+        profileUrl: "https://codeforces.com/profile/nishwanth2003",
+        achievements: ["Pupil Rating", "45+ problems solved", "Active contest participant", "Algorithm enthusiast"],
         languages: ["C++", "Python", "Java"],
-        image: "https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=Codeforces"
+        image: "https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3628695-3029920.png"
       },
       {
         platform: "HackerRank",
-        username: "alexjohnson",
-        rating: 5,
-        problemsSolved: 280,
-        rank: "5 Stars",
+        username: "nishwanth2003",
+        rating: 3,
+        problemsSolved: 120,
+        rank: "3 Stars",
         badge: "Problem Solving",
-        profileUrl: "https://hackerrank.com/alexjohnson",
-        achievements: ["5 Stars in Problem Solving", "280+ problems solved", "Python Certificate"],
+        profileUrl: "https://hackerrank.com/nishwanth2003",
+        achievements: ["3 Stars in Problem Solving", "120+ problems solved", "Python Certificate", "Algorithm mastery"],
         languages: ["Python", "Java", "C++"],
         image: "https://via.placeholder.com/300x200/00EA64/FFFFFF?text=HackerRank"
       },
       {
         platform: "GitHub",
-        username: "alexjohnson",
-        rating: 0,
-        problemsSolved: 0,
+        username: "NishwanthBairagoni",
         rank: "Active Contributor",
         badge: "Contributor",
-        profileUrl: "https://github.com/alexjohnson",
-        achievements: ["50+ repositories", "100+ contributions", "Open source projects"],
-        languages: ["JavaScript", "Python", "TypeScript"],
-        image: "https://via.placeholder.com/300x200/181717/FFFFFF?text=GitHub"
+        profileUrl: "https://github.com/NishwanthBairagoni",
+        achievements: ["Data Structures & Algorithms", "Web Development (React, Firebase)", "Full Stack Projects", "Hackathons & Coding Challenges"],
+        languages: ["Java", "Python", "C", "React"],
+        image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
       }
     ],
     projects: [
       {
-        name: "E-Commerce Platform",
-        description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-        technologies: ["React", "Node.js", "Stripe", "MongoDB"],
-        github: "https://github.com/yourusername/ecommerce",
-        live: "https://ecommerce-demo.com",
-        image: "https://via.placeholder.com/300x200/4F46E5/FFFFFF?text=E-Commerce"
+        name: "Grocery Application",
+        description: "A comprehensive grocery management application with inventory tracking, shopping lists, and budget management features.",
+        technologies: ["React", "Node.js", "MongoDB", "Express"],
+        github: "https://github.com/NishwanthBairagoni/CofeeShop-FrontEnd",
+        live: "https://grocery-app-demo.com",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTBCOTgxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Hcm9jZXJ5PC90ZXh0Pjwvc3ZnPg=="
       },
       {
-        name: "Task Management App",
-        description: "A collaborative task management application with real-time updates and team features.",
-        technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-        github: "https://github.com/yourusername/task-manager",
-        live: "https://task-manager-demo.com",
-        image: "https://via.placeholder.com/300x200/10B981/FFFFFF?text=Task+Manager"
+        name: "Heart Disease Prediction",
+        description: "Machine learning application that predicts heart disease risk using patient data and medical parameters.",
+        technologies: ["Python", "Machine Learning", "Flask", "Scikit-learn"],
+        github: "https://github.com/NishwanthBairagoni/Heart-Disease-Prediction",
+        live: "https://heart-disease-prediction-demo.com",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRUY0NDQ0Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5IZWFydCBNTDwvdGV4dD48L3N2Zz4="
       },
       {
-        name: "Portfolio Website",
-        description: "A modern, responsive portfolio website built with React and CSS animations.",
-        technologies: ["React", "CSS3", "JavaScript"],
-        github: "https://github.com/yourusername/portfolio",
-        live: "https://portfolio-demo.com",
-        image: "https://via.placeholder.com/300x200/F59E0B/FFFFFF?text=Portfolio"
+        name: "Task Scheduler",
+        description: "Intelligent task scheduling application with priority management, deadline tracking, and productivity analytics.",
+        technologies: ["React", "Node.js", "MongoDB", "JavaScript"],
+        github: "https://github.com/NishwanthBairagoni/WSMA-Exp",
+        live: "https://task-scheduler-demo.com",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjM0I4MkY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5UYXNrPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        name: "Plagiarism Checker",
+        description: "Advanced plagiarism detection tool that compares documents and provides similarity analysis with detailed reports.",
+        technologies: ["Python", "NLP", "Flask", "Text Processing"],
+        github: "https://github.com/NishwanthBairagoni/Plagiarism_Detector",
+        live: "https://plagiarism-checker-demo.com",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOEI1Q0Y2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5QbGFnaWFyaXNtPC90ZXh0Pjwvc3ZnPg=="
       }
     ],
     contactInfo: {
-      email: "alex.johnson@email.com",
-      linkedin: "https://linkedin.com/in/alexjohnson",
-      github: "https://github.com/alexjohnson",
-      twitter: "https://twitter.com/alexjohnson"
+      email: "nishwanth.bairagoni@gmail.com",
+      linkedin: "https://linkedin.com/in/nishwanth2003",
+      github: "https://github.com/nishwanth2003",
+      twitter: "https://twitter.com/nishwanth2003"
     }
   };
 
@@ -268,15 +282,15 @@ function App() {
             </div>
             <div className="about-stats">
               <div className="stat">
-                <h3>50+</h3>
+                <h3>10+</h3>
                 <p>Projects Completed</p>
               </div>
               <div className="stat">
-                <h3>450+</h3>
+                <h3>148</h3>
                 <p>Problems Solved</p>
               </div>
               <div className="stat">
-                <h3>3.8</h3>
+                <h3>{portfolioData.academic.cgpa}</h3>
                 <p>CGPA</p>
               </div>
             </div>
@@ -332,10 +346,32 @@ function App() {
                   <p>{cert.description}</p>
                   <p><strong>Issued by:</strong> {cert.issuer}</p>
                   <p><strong>Date:</strong> {cert.date}</p>
-                  <p><strong>Credential ID:</strong> {cert.credentialId}</p>
-                  <a href={cert.verificationUrl} target="_blank" rel="noopener noreferrer" className="btn btn-small btn-primary">
-                    Verify Credential
-                  </a>
+                                    <p><strong>Credential ID:</strong> {cert.credentialId}</p>
+                  
+                  {cert.subCertifications && (
+                    <div className="sub-certifications">
+                      <h4>Completed Internships:</h4>
+                      <div className="sub-certifications-list">
+                        {cert.subCertifications.map((subCert, subIndex) => (
+                          <div key={subIndex} className="sub-certification-item">
+                            <div className="sub-certification-info">
+                              <strong>{subCert.name}</strong>
+                              <span>{subCert.cohort} ({subCert.status})</span>
+                            </div>
+                            <a href={subCert.verificationUrl} target="_blank" rel="noopener noreferrer" className="btn btn-small btn-primary">
+                              View Credential
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {!cert.subCertifications && (
+                    <a href={cert.verificationUrl} target="_blank" rel="noopener noreferrer" className="btn btn-small btn-primary">
+                      View Credential
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -358,20 +394,22 @@ function App() {
                     <h3>{profile.platform}</h3>
                     <span className="coding-profile-badge">{profile.badge}</span>
                   </div>
-                  <div className="coding-profile-stats">
-                    <div className="coding-stat">
-                      <span className="stat-label">Rating</span>
-                      <span className="stat-value">{profile.rating}</span>
+                  {profile.platform !== "GitHub" && (
+                    <div className="coding-profile-stats">
+                      <div className="coding-stat">
+                        <span className="stat-label">Rating</span>
+                        <span className="stat-value">{profile.rating}</span>
+                      </div>
+                      <div className="coding-stat">
+                        <span className="stat-label">Problems</span>
+                        <span className="stat-value">{profile.problemsSolved}</span>
+                      </div>
+                      <div className="coding-stat">
+                        <span className="stat-label">Rank</span>
+                        <span className="stat-value">{profile.rank}</span>
+                      </div>
                     </div>
-                    <div className="coding-stat">
-                      <span className="stat-label">Problems</span>
-                      <span className="stat-value">{profile.problemsSolved}</span>
-                    </div>
-                    <div className="coding-stat">
-                      <span className="stat-label">Rank</span>
-                      <span className="stat-value">{profile.rank}</span>
-                    </div>
-                  </div>
+                  )}
                   <div className="coding-profile-achievements">
                     <h4>Achievements</h4>
                     <ul>

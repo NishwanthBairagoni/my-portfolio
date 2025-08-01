@@ -113,7 +113,7 @@ const Header = () => {
 
             {/* Resume Button */}
             <a
-              href="https://your-resume-link.com" // Replace with your actual resume link
+              href="https://drive.google.com/file/d/15HNCuiAFJ6mKkXpP0dazE7T9cnx-cLCI/view?usp=sharing" // Resume link updated
               target="_blank"
               rel="noopener noreferrer"
               className="resume-button"
@@ -174,7 +174,7 @@ const Header = () => {
                 {/* Mobile Resume Button */}
                 <div className="mobile-resume-section">
                   <a
-                    href="https://your-resume-link.com" // Replace with your actual resume link
+                    href="https://drive.google.com/file/d/15HNCuiAFJ6mKkXpP0dazE7T9cnx-cLCI/view?usp=sharing" // Resume link updated
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mobile-resume-button"
