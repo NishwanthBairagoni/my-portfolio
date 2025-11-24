@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Header from './components/Header';
 import Magnetic from './components/Magnetic';
+import Starfield from './components/Starfield';
 import './App.css';
+import Contact from "./components/Contact";
+
+
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -80,7 +85,7 @@ function App() {
   const portfolioData = {
     name: "Bairagoni Nishwanth",
     title: "Computer Science Student",
-    subtitle: "Passionate about Technology & Innovation",
+    subtitle: "Passionate about Technology & Innovation - Updated!",
     aboutMe: "I'm a passionate Computer Science student with a strong foundation in programming and web development. I love exploring new technologies and building innovative solutions. Currently pursuing my degree while actively participating in coding competitions and open-source projects. I'm eager to learn, grow, and contribute to meaningful projects.",
     skills: {
       frontend: ["React", "Next.js", "Tailwind CSS", "Redux"],
@@ -132,15 +137,7 @@ function App() {
         description: "ServiceNow Certified System Administrator - Demonstrates expertise in ServiceNow platform administration and configuration",
         verificationUrl: "https://drive.google.com/file/d/1i0HXrRHrNPvQJI29Se4oElAeNrgd2pP4/view?usp=sharing"
       },
-      {
-        name: "React.js Certification",
-        issuer: "Meta",
-        date: "2024",
-        credentialId: "REACT-2024",
-        image: "https://img.icons8.com/color/96/000000/react-native.png",
-        description: "React.js development certification - Demonstrates expertise in building modern web applications with React",
-        verificationUrl: "#"
-      },
+      
       {
         name: "MongoDB Certification",
         issuer: "MongoDB University",
@@ -213,7 +210,7 @@ function App() {
         description: "Machine learning application that predicts heart disease risk using patient data and medical parameters.",
         technologies: ["Python", "Machine Learning", "Flask", "Scikit-learn"],
         github: "https://github.com/NishwanthBairagoni/Heart-Disease-Prediction",
-        live: "https://heart-disease-prediction-demo.com",
+        live: "https://nishwanthbairagoni.github.io/Heart-Disease-Prediction/",
         image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRUY0NDQ0Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5IZWFydCBNTDwvdGV4dD48L3N2Zz4="
       },
       {
@@ -234,9 +231,9 @@ function App() {
       }
     ],
     contactInfo: {
-      email: "nishwanth.bairagoni@gmail.com",
+      email: "nishwanth2003@gmail.com",
       linkedin: "https://linkedin.com/in/nishwanth2003",
-      github: "https://github.com/nishwanth2003",
+      github: "https://github.com/NishwanthBairagoni",
       twitter: "https://twitter.com/nishwanth2003"
     }
   };
@@ -245,6 +242,7 @@ function App() {
     <div className={`App ${isLoaded ? 'loaded' : ''}`}>
       {/* Header Component */}
       <Header />
+      <Starfield />
 
       {/* Hero Section */}
       <section id="home" className="hero">
@@ -264,9 +262,17 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="profile-card">
-              <div className="profile-avatar">
-                <div className="avatar-placeholder">BN</div>
-              </div>
+              <div
+                className="profile-avatar"
+                role="img"
+                aria-label="Profile avatar"
+                style={{
+                  backgroundImage: `url(${process.env.PUBLIC_URL + '/profilepic.jpg'})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              ></div>
             </div>
           </div>
         </div>
@@ -481,52 +487,9 @@ function App() {
               <p>I'm actively seeking internship opportunities and exciting projects to enhance my skills and gain real-world experience. Feel free to reach out for collaborations, mentorship, or any opportunities!</p>
               
               {/* Contact Form */}
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    placeholder="Your full name"
-                    required
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    disabled={isSubmitting}
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="your.email@example.com"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    disabled={isSubmitting}
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="company">Company / Organization</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    name="company" 
-                    placeholder="Your company or organization"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    disabled={isSubmitting}
-                  />
-                </div>
-                
-                <button type="submit" className="submit-btn" disabled={isSubmitting}>
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </button>
-              </form>
+              {/* RIGHT SIDE: EMAIL FORM */}
+<Contact />
+
               
               <div className="contact-links">
                 <a href={`mailto:${portfolioData.contactInfo.email}`} className="contact-link">
