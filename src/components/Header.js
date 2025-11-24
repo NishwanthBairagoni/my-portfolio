@@ -113,7 +113,7 @@ const Header = () => {
 
             {/* Resume Button */}
             <a
-              href="https://drive.google.com/file/d/15HNCuiAFJ6mKkXpP0dazE7T9cnx-cLCI/view?usp=sharing" // Resume link updated
+              href="https://drive.google.com/file/d/1udXIWT96cPmU-8MF6iBwOlLziGrQKXCJ/view?usp=sharing" // Resume link updated
               target="_blank"
               rel="noopener noreferrer"
               className="resume-button"
